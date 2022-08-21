@@ -1,17 +1,14 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import  Dashboard from './Home/Dashboard'
 
-const Home: NextPage = () => {
+const Homelander: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Sistema Hospitalar</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-    </div>
+    <>
+      <Dashboard /> 
+    </>
+
+   
   )
 }
 
-export default Home
+export default Homelander
