@@ -23,11 +23,11 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Schedules" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton href="http://localhost:3000/pacientes">
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary="Patients" />
+      <ListItemText primary="Pacientes" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>

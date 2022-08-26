@@ -3,6 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from "../src/utils/theme"
 import type { AppProps } from 'next/app'
 import Head from 'next/head';
+import Dashboard from './Home/Dashboard';
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -16,8 +17,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Head>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Component {...pageProps} />
+      <Dashboard>
+        <Component {...pageProps} />
+      </Dashboard> 
     </ThemeProvider>
+
     </>
     
   )
