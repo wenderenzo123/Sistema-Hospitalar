@@ -21,6 +21,8 @@ import { mainListItems, secondaryListItems } from "./listItems";
 import MenuOpenRoundedIcon from '@mui/icons-material/MenuOpenRounded';
 import LocalHospitalRoundedIcon from '@mui/icons-material/LocalHospitalRounded';
 import mdTheme from "../../src/utils/theme";
+import { alpha } from "@mui/material";
+import { useRouter } from "next/router";
 
 const drawerWidth: number = 240;
 
@@ -93,10 +95,9 @@ export default function DashboardContent({ children }: DashboardLayoutProps) {
     const toggleDrawer = () => {
         setOpen(!open);
     };
-
     return (
         <ThemeProvider theme={mdTheme}>
-            <Box sx={{ display: "flex" }}>
+            <Box sx={{ display: "flex"}}>
                 <CssBaseline />
                 <AppBar position="absolute" open={open}>
                     <Toolbar
@@ -156,6 +157,7 @@ export default function DashboardContent({ children }: DashboardLayoutProps) {
                     <List
                         style={{
                             backgroundColor: mdTheme.palette.primary.main,
+                            opacity: 0.99,
                             color: "grey",
                         }}
                         component="nav"
@@ -174,11 +176,16 @@ export default function DashboardContent({ children }: DashboardLayoutProps) {
                                 : theme.palette.grey[900],
                         flexGrow: 1,
                         height: "100vh",
+                        width: "100vw",
                         overflow: "auto",
                     }}
-                >
+                    >
                     <Toolbar />
-                    {children}
+                    <Box sx={{
+                        p: 4,
+                        }}>
+                        {children}
+                    </Box>
                 </Box>
             </Box>
         </ThemeProvider>

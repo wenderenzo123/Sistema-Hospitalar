@@ -33,8 +33,6 @@ export default function Pacientes() {
     return (
         <TableContainer component={Paper} sx={{
             
-            height: '100%',
-            // bgcolor: '#e0e0e0'
             }}>
              <Box
                 sx={{
@@ -44,7 +42,7 @@ export default function Pacientes() {
                 p: 1
                 }}>
             <Title>Prontuarios recentes</Title>
-            <Button variant="contained">Cadastrar Paciente</Button>
+                <Button variant="contained" href = "http://localhost:3000/cadastrarPacientes" >Cadastrar Paciente</Button>
             </Box>
             <Table sx={{ minWidth: 650 }} size="small" aria-label="sticky table">
                 <TableHead>
