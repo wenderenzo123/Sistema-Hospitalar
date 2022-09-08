@@ -148,7 +148,7 @@ export default function CadastrarPacientes(){
             <TextField
                 fullWidth
                 id="filled-textarea"
-                label="Nome do Paciente"
+                label=" Observações"
                 multiline
                 variant="filled"
                 rows={4}

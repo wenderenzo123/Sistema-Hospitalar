@@ -11,7 +11,7 @@ import QrCodeRoundedIcon from '@mui/icons-material/QrCodeRounded';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
-import Title from '../../components/Title/Title';
+import Title from '../../src/Title/Title';
 function createData(
     id: number,
     name: string,
@@ -69,10 +69,10 @@ export default function Pacientes() {
                             <TableCell align="right">{row.years}</TableCell>
                             <TableCell align="right">{row.status}</TableCell>
                             <TableCell align="right">
-                                <IconButton edge="end" aria-label="delete">
+                                <IconButton edge="end" aria-label="qrcode">
                                     <QrCodeRoundedIcon />
                                 </IconButton>
-                                <IconButton edge="end" aria-label="delete">
+                                <IconButton edge="end" aria-label="delete" href = "http://localhost:3000/paciente" >
                                     <EditRoundedIcon />
                                 </IconButton>
                             </TableCell>
