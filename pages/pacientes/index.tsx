@@ -11,7 +11,7 @@ import QrCodeRoundedIcon from '@mui/icons-material/QrCodeRounded';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
-import Title from '../../src/Title/Title';
+import Title from '../../src/components/Title/Title';
 function createData(
     id: number,
     name: string,

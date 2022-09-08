@@ -1,7 +1,7 @@
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import Title from '../../src/Title/Title';
+import Title from '../../src/components/Title/Title';
 import { Container, Divider, Menu, MenuItem, Typography } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useState } from 'react';
